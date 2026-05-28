@@ -37,8 +37,11 @@ if df is None:
     st.stop()
 
 # --- SIDEBAR (FILTROS) ---
-st.sidebar.image("elach.png", width=150) # Logo genérico se quiseres
+import os
+pasta_atual = os.path.dirname(__file__)
+st.sidebar.image(os.path.join(pasta_atual, "elach.png"), width=150)
 st.sidebar.title("Filtros")
+
 
 # Filtro de Anos (removendo o ano 0 se existir)
 anos_disponiveis = sorted([int(a) for a in df['year'].unique() if a > 0])
