@@ -18,7 +18,7 @@ st.markdown("""
 # --- CARREGAMENTO DE DADOS ---
 @st.cache_data
 def load_data():
-    file_path = 'humanidades_digitais_def..csv'
+    file_path = 'humanidades_digitais_def.csv'
     if not os.path.exists(file_path):
         return None
     
@@ -33,7 +33,7 @@ def load_data():
 df = load_data()
 
 if df is None:
-    st.error("Erro: Ficheiro CSV não encontrado. Garante que o nome é 'humanidades_digitais_def..csv'")
+    st.error("Erro: Ficheiro CSV não encontrado. Garante que o nome é 'humanidades_digitais_def.csv'")
     st.stop()
 
 # --- SIDEBAR (FILTROS) ---
