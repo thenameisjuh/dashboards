@@ -5,7 +5,6 @@ import os
 import random
 
 df_f = pd.DataFrame() 
-df = pd.read_csv('humanidades_digitais_def.csv')
 
 # --- 1. CONFIGURAÇÃO DA PÁGINA (Sempre o primeiro comando) ---
 st.set_page_config(page_title="Horos HD - O Oráculo", layout="wide", initial_sidebar_state="expanded")
