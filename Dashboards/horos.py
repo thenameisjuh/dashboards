@@ -103,7 +103,7 @@ st.markdown("""
 # --- 3. MOTOR DE DADOS ---
 @st.cache_data
 def load_data():
-    file = 'humanidades_digitais_def..csv'
+    file = 'humanidades_digitais_def.csv'
     if not os.path.exists(file): return None
     try:
         df = pd.read_csv(file, sep=';')
